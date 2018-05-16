@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <center>
+      <AnchorPane fx:id="insertgo" prefHeight="300.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="insertname" layoutX="92.0" layoutY="85.0" prefHeight="27.0" prefWidth="174.0" promptText="별명" />
+            <PasswordField fx:id="insertpassword" layoutX="92.0" layoutY="139.0" prefHeight="27.0" prefWidth="174.0" promptText="비밀번호" />
+            <Button fx:id="insertbutton" layoutX="114.0" layoutY="189.0" mnemonicParsing="false" onAction="#insertkids" prefHeight="57.0" prefWidth="123.0" text="회원등록">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

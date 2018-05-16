@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <center>
+      <AnchorPane fx:id="pointrank" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView layoutX="67.0" layoutY="67.0" prefHeight="289.0" prefWidth="471.0">
+              <columns>
+                <TableColumn fx:id="rank" prefWidth="75.0" text="순위" />
+                <TableColumn fx:id="rankname" prefWidth="199.0" text="이름" />
+                  <TableColumn fx:id="rankpoint" prefWidth="196.0" text="점수" />
+              </columns>
+            </TableView>
+            <Label layoutX="67.0" layoutY="36.0" prefHeight="41.0" prefWidth="471.0" text="                           나는 몇등일까요~?" textAlignment="CENTER" textFill="#0f8026">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

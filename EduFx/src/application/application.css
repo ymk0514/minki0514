@@ -1,0 +1,28 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#button1{
+	-fx-font-size: 20px;
+	-fx-text-fill: blue;
+	-fx-font-weight: bold;
+}
+#button2{
+	-fx-font-size: 20px;
+	-fx-text-fill: blue;
+	-fx-font-weight: bold;
+}
+
+#button3{
+	
+	-fx-font-size: 20px;
+	-fx-text-fill: blue;
+	-fx-font-weight: bold;
+	
+}
+
+#insert{
+		-fx-font-size: 20px;
+	-fx-text-fill: blue;
+	-fx-font-weight: bold;
+	
+	
+}

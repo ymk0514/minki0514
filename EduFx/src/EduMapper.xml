@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 회원 정보 처리 SQL -->
+<mapper namespace="AllController.EduMapper">
+
+<!-- 회원정보 저장 -->
+
+<select id="vocaName" resultType="voca">
+ select voca_name
+ from Voca
+ 
+</select>
+
+<!-- 로그인할경우 데이터베이스에 있는값이면 카운트된 숫자를 반환시킬것임. -->
+<select id="loginkids" parameterType="Kid" resultType="Integer">
+select 
+count(kid_name)
+from Kids
+where kid_name=#{kid_name} and
+kid_password=#{kid_password}
+</select>
+
+<!-- 회원가입 또는 탈퇴시 데이터에 있는값인지를 확인하는 SQL -->
+<select id="searchkids" parameterType="kid" resultType="Integer">
+select 
+count(kid_name)
+from Kids
+where kid_name=#{kid_name}
+</select>
+
+
+<insert id="insertkids" parameterType="Kid">
+insert into Kids (
+	kid_seq
+	, kid_name
+	, kid_password
+)values (
+	kid_seq.nextval
+	, #{kid_name}
+	, #{kid_password}
+	
+)
+</insert>
+
+<delete id="deletekids" parameterType="Kid"
+>
+delete Kids
+where 
+kid_name=#{kid_name} and
+kid_password=#{kid_password}
+</delete>
+
+
+
+</mapper>
